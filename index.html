@@ -7,10 +7,9 @@
     <script>
         tailwind.config = {
           theme: {
-            extend: {
-                backgroundImage: {
-                    'afro': "url('https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg')",
-                    }
+            screens: {
+                'md': '1186px',
+                'sm': '768px'
             }
           }
         }
@@ -18,8 +17,8 @@
 </head>
 <html>
 <body class="">
-    <div class="w-full xl:w-screen md:w-full h-16 bg-gradient-to-r from-violet-500 to-fuchsia-500 pt-4 pb-4 flex static m-0">
-        <div class="flex justify-center items-center space-x-2 pt-4 w-screen absolute top-0 flex-col md:flex-row">
+    <div class="w-full h-16 bg-gradient-to-r from-violet-500 to-fuchsia-500 pt-4 pb-4 flex static m-0">
+        <div class="w-full flex justify-center items-center space-x-2 pt-4 absolute top-0 flex-col md:flex-row">
             <div class="rounded-full w-32 h-auto overflow-hidden inline-block shadow-xl">
                 <img class='hover:scale-125' src='https://t2.ea.ltmcdn.com/es/posts/1/9/7/como_saber_de_que_tamano_sera_un_perro_mestizo_22791_orig.jpg' alt="">
             </div>
@@ -27,18 +26,18 @@
         </div>  
     </div>
 
-    <div class="w-screen flex md:flex-row flex-col h-max justify-center pt-32 md:pt-24 space-x-2 relative">
-        <div class="self-start justify-self-start md:flex-none md:fixed md:left-14 md:top-auto sticky top-0">
-            <ul class="flex md:flex-col md:space-y-2 font-mono even:bg-red-300 ">
-                <li class="hover:bg-violet-200 rounded-md w-48"><a href="">🙋🏽‍♀️ Datos personales</a></li>
-                <li class="hover:bg-violet-200 rounded-md w-48"><a href="">👩🏽‍🎓 Estudios</a></li>
-                <li class="hover:bg-violet-200 rounded-md w-48"><a href="">🌱 Experiencias</a></li>
+    <div class="w-full flex md:flex-row flex-col justify-center pt-32 md:pt-24 space-x-2 relative">
+        <div class="self-start w-full md:w-max self-center bg-violet-700/80 md:bg-transparent  md:self-start md:flex-none md:fixed md:left-14 md:top-auto sticky top-0">
+            <ul class="flex w-full justify-center py-6 space-x-6 font-mono md:space-x-0 md:flex-col md:space-y-2 text-white md:text-black ">
+                <li class="hover:bg-violet-200 rounded-md md:w-46"><a href="#datos">😜 Datos personales</a></li>
+                <li class="hover:bg-violet-200 rounded-md md:w-46"><a href="#estudio">👩🏽‍🎓 Estudios</a></li>
+                <li class="hover:bg-violet-200 rounded-md md:w-46"><a href="#expe">🌱 Experiencias</a></li>
             </ul>
         </div>
-        <div class="w-1/2 flex-initial">
-            <div class="w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6">
-                <h1 class="font-mono font-bold text-lg " id="datos">🙋🏽‍♀️ <span class="underline decoration-pink-500">Datos personales</span></h1>
-                <div class="grid md:grid-cols-2 gap-1 w-full items-center ">
+        <div class="w-11/12 md:w-3/5 flex-initial self-center">
+            <div class="w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6 " id="datos">
+                <h1 class="font-mono font-bold text-lg ">😜 <span class="underline decoration-pink-500">Datos personales</span></h1>
+                <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-1 w-full items-center ">
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
@@ -51,9 +50,9 @@
                     <p class="odd:font-bold">soy texto relleno</p>
                 </div>
             </div>
-            <div class="flex-initial w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6">
-                <h1 class="font-mono font-bold text-lg " id="datos">👩🏽‍🎓 <span class="underline decoration-pink-500">Estudios</span></h1>
-                <div class="grid md:grid-cols-2 gap-1 w-full items-center ">
+            <div class="flex-initial w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6" id="estudio">
+                <h1 class="font-mono font-bold text-lg " >👩🏽‍🎓 <span class="underline decoration-pink-500">Estudios</span></h1>
+                <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-1 w-full items-center ">
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
@@ -66,9 +65,9 @@
                     <p class="odd:font-bold">soy texto relleno</p>
                 </div>
             </div>
-            <div class="flex-initial w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6">
-                <h1 class="font-mono font-bold text-lg " id="datos">🌱 <span class="underline decoration-pink-500">Experiencias</span></h1>
-                <div class="grid md:grid-cols-2 gap-1 w-full items-center ">
+            <div class="flex-initial w-full h-max shadow-xl flex flex-col space-y-2 p-5 rounded-xl mb-6" id="expe">
+                <h1 class="font-mono font-bold text-lg ">🌱 <span class="underline decoration-pink-500">Experiencias</span></h1>
+                <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-1 w-full items-center ">
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
                     <p class="odd:font-bold">soy texto relleno</p>
